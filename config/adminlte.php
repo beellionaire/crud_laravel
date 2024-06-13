@@ -338,7 +338,7 @@ return [
             'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Data Program Studi',
                     'url' => '#',
                 ],
                 [
