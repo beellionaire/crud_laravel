@@ -8,12 +8,12 @@
 @stop
 
 @section('content_header')
-    <h1>Edit Program Studi</h1>
+    <h1 class="px-3" >Edit Program Studi</h1>
 @stop
 
 @section('content')
 
-    <div class="container mt-5 mb-5">
+    <div class="container mt-2 mb-5">
         <div class="row">
             <div class="col-md-12">
                 <div class="card border-0 shadow-sm rounded">
@@ -62,8 +62,8 @@
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-md btn-primary">UPDATE</button>
-                            <button type="reset" class="btn btn-md btn-warning">RESET</button>
+                            <button type="submit" class="btn btn-md btn-success">Perbarui</button>
+                            <button type="reset" class="btn btn-md bg-secondary">Reset</button>
 
                         </form>
                     </div>

@@ -41,6 +41,15 @@ class ProgramStudiController extends Controller
         return redirect()->route('program-studi.index')->with(['success' => 'Data Berhasil Disimpan!']);
     }
 
+    public function show(string $id): View
+    {
+        //get post by ID
+        $prodi = ProgramStudi::findOrFail($id);
+
+        //render view with post
+        return view('program_studi.detail', compact('prodi'));
+    }
+
 
     public function edit(string $id): View
     {

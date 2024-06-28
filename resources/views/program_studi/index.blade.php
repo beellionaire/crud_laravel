@@ -8,16 +8,16 @@
 @stop
 
 @section('content_header')
-    <h1>Data Program Studi</h1>
+    <h1 class="px-3 fw-bold">Data Program Studi</h1>
 @stop
 
 @section('content')
-    <div class="container mt-5">
+    <div class="container mt-2 px-3">
         <div class="row">
             <div class="col-md-12">
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
-                        <a href="{{ route('program-studi.create') }}" class="btn btn-md btn-success mb-3">TAMBAH PRODI</a>
+                        <a href="{{ route('program-studi.create') }}" class="btn btn-md btn-success mb-3">Tambah Prodi</a>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -31,7 +31,7 @@
                                 @forelse ($prodi as $prd)
                                     <tr>
                                         <td>
-                                            <a href="" class="text-decoration-none">
+                                            <a href="{{ route('program-studi.show', $prd->id) }}" class="text-decoration-none">
                                                 {{ $prd->nama_prodi }}
                                             </a>
                                         </td>
@@ -41,7 +41,7 @@
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                 action="{{ route('program-studi.destroy', $prd->id) }}" method="POST">
                                                 <a href="{{ route('program-studi.edit', $prd->id) }}"
-                                                    class="btn btn-sm btn-primary">Edit</a>
+                                                    class="btn btn-sm btn-primary">Update</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-sm btn-danger">Hapus</button>

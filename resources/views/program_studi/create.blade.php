@@ -61,7 +61,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-md btn-success">Simpan</button>
-                            <button type="reset" class="btn btn-md btn-warning">Reset</button>
+                            <button type="reset" class="btn btn-md btn-secondary">Reset</button>
                             <a href="{{ route('program-studi.index') }}" class="btn btn-md btn-primary">Kembali</a>
 
                         </form>

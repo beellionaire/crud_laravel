@@ -21,5 +21,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::resource('/program-studi', \App\Http\Controllers\ProgramStudiController::class);
-Route::get('/create', [App\Http\Controllers\ProgramStudiController::class, 'create'])->name('create');
