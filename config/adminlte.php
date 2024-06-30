@@ -316,25 +316,17 @@ return [
             'can' => 'manage-blog',
         ],
 
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+        ['header' => 'Menu'],
         [
             'text' => 'Data Master',
-            'icon' => 'fas fa-fw fa-share',
+            'icon' => 'fas fa-folder',
             'submenu' => [
                 [
                     'text' => 'Data Program Studi',
+                    'icon' => 'fas fa-graduation-cap',
                     'url' => '/program-studi',
                 ],
+               
             ],
         ],
     ],
