@@ -23,3 +23,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('/program-studi', \App\Http\Controllers\ProgramStudiController::class);
+Route::get('/sekolah', [
+    App\Http\Controllers\SekolahController::class,
+    'index'
+]);
+
+Route::get('/fetch-sekolah', [
+    App\Http\Controllers\SekolahController::class,
+    'fetchSekolah'
+]);

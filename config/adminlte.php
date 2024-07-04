@@ -326,6 +326,11 @@ return [
                     'icon' => 'fas fa-graduation-cap',
                     'url' => '/program-studi',
                 ],
+                [
+                    'text' => 'Data Sekolah',
+                    'icon' => 'fas fa-graduation-cap',
+                    'url' => '/sekolah',
+                ],
                
             ],
         ],
