@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class SekolahController extends Controller
 {
@@ -12,7 +13,7 @@ class SekolahController extends Controller
     }
     public function fetchSekolah()
     {
-        $response = Http::get('https://api-sekolah-indonesia.vercel.app');
+        $response = Http::get('https://api-sekolah-indonesia.vercel.app/sekolah');
         return response()->json($response->json());
     }
 }

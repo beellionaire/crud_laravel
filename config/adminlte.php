@@ -328,7 +328,7 @@ return [
                 ],
                 [
                     'text' => 'Data Sekolah',
-                    'icon' => 'fas fa-graduation-cap',
+                    'icon' => 'fas fa-school',
                     'url' => '/sekolah',
                 ],
                
