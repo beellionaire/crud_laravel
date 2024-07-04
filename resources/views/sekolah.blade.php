@@ -16,7 +16,7 @@
     <div class="container mt-5">
         <button id="fetchData" class="btn btn-primary mb-4">Fetch Data
             Sekolah</button>
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>No</th>

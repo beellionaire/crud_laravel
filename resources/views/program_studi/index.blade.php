@@ -18,7 +18,7 @@
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
                         <a href="{{ route('program-studi.create') }}" class="btn btn-md btn-success mb-3">Tambah Prodi</a>
-                        <table class="table table-bordered">
+                        <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col">NAMA PRODI</th>
